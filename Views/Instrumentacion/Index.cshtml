@@ -1,0 +1,204 @@
+﻿<div class="row" style="padding-bottom: 1rem;">
+    <div class="col-12" style="padding-bottom: 1rem;">
+        <h1 class="text-center">Inicio de Documento</h1>
+    </div>
+</div>
+<hr class="rounded">
+<i class="fa fa-solid fa-user fa-lg" style="padding-right: 1rem;"></i>
+<label class="text-start fs-3" style="padding-bottom: 1rem;">Datos del profesor</label>
+<div class="row" style="padding-bottom: 1rem;">
+    <div class="col-md-4">
+        <label for="inputPeriodo" class="form-label">Periodo</label>
+        <input type="text" class="form-control" id="inputPeriodo" placeholder="Ejemplo: ISIC-XXXX-XXX">
+    </div>
+    <div class="col-md-5">
+        <label for="inputProfe" class="form-label">Nombre Profesor:</label>
+        <input type="text" class="form-control" id="inputProfe" aria-describedby="profeHelp">
+    </div>
+</div>
+<hr class="rounded">
+<i class="fa fa-solid fa-file fa-lg" style="padding-right: 1rem;"></i>
+<label class="text-start fs-3" style="padding-bottom: 1rem;">Datos de asignatura</label>
+<div class="row">
+    <div class="col-md-4">
+        <label for="inputSemestre" class="form-label">Semestre:</label>
+        <select id="inputSemestre" class="form-select" aria-label="Default select example">
+            <option selected disabled>Seleccione una opcion</option>
+            <option value="1">Semestre 1</option>
+            <option value="2">Semestre 2</option>
+            <option value="3">Semestre 3</option>
+            <option value="3">Semestre 4</option>
+            <option value="3">Semestre 5</option>
+            <option value="3">Semestre 6</option>
+        </select>
+    </div>
+    <div class="col-md-4">
+        <label for="inputAsignatura" class="form-label">Asignatura:</label>
+        <select id="inputAsignatura" class="form-select">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+        </select>
+    </div>
+    <div class="col-md-4">
+        <label for="inputGrupo" class="form-label">Grupo:</label>
+        <input type="text" class="form-control" id="inputGrupo" aria-describedby="profeHelp"
+               placeholder="Ejemplo: 11, 12">
+    </div>
+</div>
+<div class="row" style="padding-top: 1rem; padding-bottom: 1rem;">
+    <div class="col-md-4">
+        <label for="inputPlan" class="form-label">Plan de Estudios:</label>
+        <input type="text" class="form-control" id="inputPlan"
+               placeholder="Ejemplo: ISIC-XXXX-XXX">
+    </div>
+    <div class="col-md-4">
+        <label for="inputSATCA" class="form-label">SATCA:</label>
+        <input type="text" class="form-control" id="inputSATCA"
+               placeholder="Ejemplo: 2 2 5">
+    </div>
+</div>
+<hr class="rounded">
+<i class="fa fa-solid fa-clock fa-lg" style="padding-right: 1rem;"></i>
+<label class="text-start fs-3" style="padding-bottom: 1rem;">Horarios Asignados</label>
+
+<div class="row" style="padding-top: 1rem; padding-bottom: 1rem;">
+
+    <div id="grupoHora" class="col-md-4">
+        <h3>Primer <span class="badge bg-secondary">Dia</span></h3>
+        <div class="col">
+            <label for="inputDia" class="form-label">Dia de la semana:</label>
+            <select id="inputDia" class="form-select" aria-label="Default select example">
+                <option selected disabled>Seleccione una opcion</option>
+                <option value="1">Lunes</option>
+                <option value="2">Martes</option>
+                <option value="3">Miercoles</option>
+                <option value="3">Jueves</option>
+                <option value="3">Viernes</option>
+            </select>
+        </div>
+        <div class="col">
+            <label for="inputHora1" class="form-label">Hora inicio:</label>
+            <input type="time" class="form-control" id="inputHora1" aria-describedby="profeHelp"
+                   placeholder="Ejemplo: 11, 12">
+        </div>
+        <div class="col">
+            <label for="inputHora2" class="form-label">Hora fin:</label>
+            <input type="time" class="form-control" id="inputHora2" aria-describedby="profeHelp"
+                   placeholder="Ejemplo: 11, 12">
+        </div>
+    </div>
+
+    <div id="grupoHora2" class="col-md-4">
+        <h3>Segundo <span class="badge bg-secondary">Dia</span></h3>
+        <div class="col">
+            <label for="inputDia2" class="form-label">Dia de la semana:</label>
+            <select id="inputDia2" class="form-select" aria-label="Default select example">
+                <option selected disabled>Seleccione una opcion</option>
+                <option value="1">Lunes</option>
+                <option value="2">Martes</option>
+                <option value="3">Miercoles</option>
+                <option value="3">Jueves</option>
+                <option value="3">Viernes</option>
+            </select>
+        </div>
+        <div class="col">
+            <label for="inputHora21" class="form-label">Hora inicio:</label>
+            <input type="time" class="form-control" id="inputHora21" />
+        </div>
+        <div class="col">
+            <label for="inputHora22" class="form-label">Hora fin:</label>
+            <input type="time" class="form-control" id="inputHora22" />
+        </div>
+    </div>
+    <div id="grupoHora3" class="col-md-4">
+        <h3>Tercer <span class="badge bg-secondary">Dia</span></h3>
+        <div class="col">
+            <label for="inputDia3" class="form-label">Dia de la semana:</label>
+            <select id="inputDia3" class="form-select" aria-label="Default select example">
+                <option selected disabled>Seleccione una opcion</option>
+                <option value="1">Lunes</option>
+                <option value="2">Martes</option>
+                <option value="3">Miercoles</option>
+                <option value="3">Jueves</option>
+                <option value="3">Viernes</option>
+            </select>
+        </div>
+        <div class="col">
+            <label for="inputHora31" class="form-label">Hora inicio:</label>
+            <input type="time" class="form-control" id="inputHora31">
+        </div>
+        <div class="col">
+            <label for="inputHora32" class="form-label">Hora fin:</label>
+            <input type="time" class="form-control" id="inputHora32">
+        </div>
+    </div>
+
+    <div id="grupoHora4" class="col-md-4" style="padding-top: 1.5rem;">
+        <h3>Cuarto <span class="badge bg-secondary">Dia</span></h3>
+        <div class="col">
+            <label for="inputDia4" class="form-label">Dia de la semana:</label>
+            <select id="inputDia4" class="form-select" aria-label="Default select example">
+                <option selected disabled>Seleccione una opcion</option>
+                <option value="1">Lunes</option>
+                <option value="2">Martes</option>
+                <option value="3">Miercoles</option>
+                <option value="3">Jueves</option>
+                <option value="3">Viernes</option>
+            </select>
+        </div>
+        <div class="col">
+            <label for="inputHora41" class="form-label">Hora inicio:</label>
+            <input type="time" class="form-control" id="inputHora41">
+        </div>
+        <div class="col">
+            <label for="inputHora42" class="form-label">Hora fin:</label>
+            <input type="time" class="form-control" id="inputHora42">
+        </div>
+    </div>
+
+
+    <div class="col-md-2 align-middle">
+        <button type="button" class="btn btn-outline-success">
+            <span class="fa fa-plus fa-lg" aria-hidden="true"></span>
+        </button>
+    </div>
+</div>
+<hr class="rounded">
+<i class="fa fa-solid fa-calendar fa-lg" style="padding-right: 1rem;"></i>
+<label class="text-start fs-3" style="padding-bottom: 1rem;">Fechas de entrega</label>
+<div class="row" style="padding-top: 1rem; padding-bottom: 1rem;">
+    <div class="col-md-4">
+        <label for="inputEntrega" class="form-label">Fecha de entrega:</label>
+        <input type="date" disabled class="form-control" id="inputEntrega" />
+    </div>
+    <div class="col-md-4">
+        <label for="inputFinal" class="form-label">Periodo Programado de reporte final:</label>
+        <input type="date" class="form-control" id="inputFinal">
+    </div>
+</div>
+<div class="row" style="padding-bottom: 5rem;">
+    <div class="col-md-4">
+        <label for="input1seg" class="form-label">Periodo programado 1er seguimiento:</label>
+        <input type="date" class="form-control" id="input1seg">
+    </div>
+    <div class="col-md-4">
+        <label for="input2seg" class="form-label">Periodo programado 2o seguimiento:</label>
+        <input type="date" class="form-control" id="input2seg" aria-describedby="profeHelp"
+               placeholder="Ejemplo: 11, 12">
+    </div>
+    <div class="col-md-4">
+        <label for="input3seg" class="form-label">Periodo programado 3er seguimiento:</label>
+        <input type="date" class="form-control" id="input3seg" aria-describedby="profeHelp"
+               placeholder="Ejemplo: 11, 12">
+    </div>
+</div>
+<div class="row justify-content-end" style="padding: 1rem;">
+    <div class="col-md-2" style="text-align: right;">
+        <button type="button" id="btnTerminar" class="btn btn-outline-danger"
+                style="display: inline-block;">
+            Terminar
+        </button>
+    </div>
+</div>
